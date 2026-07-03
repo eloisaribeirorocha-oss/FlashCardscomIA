@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brasil Encantado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <span class="logo">🌿 Brasil Encantado</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#linha-tempo">Linha do Tempo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content glass">
+      <h1>Brasil Encantado</h1>
+      <p>Mitos e lendas que ecoam na alma do nosso povo</p>
+      <a href="#sobre" class="btn-gold">Explorar</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2 class="section-title">O que são mitos e lendas?</h2>
+      <div class="cards-sobre">
+        <div class="card-sobre glass">
+          <h3>🧚 Mito</h3>
+          <p>Narrativa sagrada que explica a origem do mundo, fenômenos naturais e a relação com o divino.</p>
+        </div>
+        <div class="card-sobre glass">
+          <h3>📖 Lenda</h3>
+          <p>História popular transmitida oralmente, baseada em eventos reais com elementos fantásticos.</p>
+        </div>
+        <div class="card-sobre glass">
+          <h3>⚖️ Diferenças</h3>
+          <p>O mito é sobrenatural e fundador; a lenda é mais terrena, ligada a lugares e épocas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="linha-tempo" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">✨ Linha do Tempo</h2>
+      <div class="timeline">
+        <div class="timeline-item glass" data-delay="0"><span>🌿</span> Povos indígenas</div>
+        <div class="timeline-item glass" data-delay="200"><span>⛵</span> Colonização portuguesa</div>
+        <div class="timeline-item glass" data-delay="400"><span>🌍</span> Influência africana</div>
+        <div class="timeline-item glass" data-delay="600"><span>📜</span> Folclore brasileiro</div>
+        <div class="timeline-item glass" data-delay="800"><span>🎭</span> Cultura popular atual</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section-title">🦋 Galeria dos personagens</h2>
+      <div class="galeria-grid" id="galeriaGrid"></div>
+    </div>
+  </section>
+
+  <section id="mapa" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">🗺️ Mapa do Brasil</h2>
+      <div class="mapa-container glass">
+        <div class="regiao" data-regiao="norte">Norte</div>
+        <div class="regiao" data-regiao="nordeste">Nordeste</div>
+        <div class="regiao" data-regiao="centro-oeste">Centro-Oeste</div>
+        <div class="regiao" data-regiao="sudeste">Sudeste</div>
+        <div class="regiao" data-regiao="sul">Sul</div>
+        <div class="mapa-info" id="mapaInfo">Clique em uma região para descobrir suas lendas.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="section">
+    <div class="container">
+      <h2 class="section-title">🧠 Quiz do Folclore</h2>
+      <div id="quizContainer" class="quiz-box glass"></div>
+    </div>
+  </section>
+
+  <section id="curiosidades" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">💡 Curiosidades</h2>
+      <div class="curiosidades-grid" id="curiosidadesGrid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content glass">
+      <p>🌿 Brasil Encantado — projeto de mitos e lendas</p>
+      <p>Créditos: equipe fictícia "Raízes do Brasil"</p>
+      <p>© <span id="anoAtual"></span> · redes sociais: @brasilencantado</p>
+    </div>
+  </footer>
+
+  <button id="backTop" class="btn-back">⬆</button>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal glass">
+      <button id="modalClose" class="modal-close">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
